@@ -26,8 +26,13 @@ output_result()
 """
 4.2) Print out 3 greatest numbers in the array:
 """
-
-sorted_desc = no_duplicates_array  # in case I want to work with unmodified `no_duplicates_array` further in code
+sorted_desc = [] # in case I want to work with unmodified `no_duplicates_array` further in code
+"""
+Here I do `extend` instead of `sorted_desc = no_duplicates_array` 
+because latter will map `sorted_desc` to `no_duplicates_array` and then `sort` method will just modify the object
+`sorted_desc` array is mapped to.
+"""
+sorted_desc.extend(no_duplicates_array)
 sorted_desc.sort(reverse=True)
 print("Here are 3 of the greatest numbers in the list: {}".format(sorted_desc[0:3]))
 
@@ -38,13 +43,23 @@ Not sure here whether I am supposed to print index of a smallest number from the
 or from the one without any duplicates, so I did both
 """
 
+# Also, one can find the smallest number using this method:
+
 
 def lesser_num_index(provided_list):
+    print(provided_list)
     min_value_index = 0
     for index, value in enumerate(provided_list[1:]):
         if value <= provided_list[min_value_index]:
             min_value_index = index
     return min_value_index
+
+
+# or this one:
+
+
+# def lesser_num_index(provided_list):
+#     return provided_list.index(min(provided_list))
 
 
 print("The index of a lesser number from original array: {}".format(lesser_num_index(source_array)))
