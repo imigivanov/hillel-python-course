@@ -29,12 +29,12 @@ output_result()
 
 sorted_desc = no_duplicates_array  # in case I want to work with unmodified `no_duplicates_array` further in code
 sorted_desc.sort(reverse=True)
-print("Here are 3 of the largest numbers in the list: {}".format(sorted_desc[0:3]))
+print("Here are 3 of the greatest numbers in the list: {}".format(sorted_desc[0:3]))
 
 """
-4.3) Print out the index of a lesser value in the list.
+4.3) Print out the index of a smallest value in the list.
 
-Not sure here whether I supposed to print index of a lesser number from the source array 
+Not sure here whether I supposed to print index of a smallest number from the source array 
 or from the one without any duplicates, so I did both
 """
 
