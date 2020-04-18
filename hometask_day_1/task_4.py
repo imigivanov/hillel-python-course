@@ -47,7 +47,6 @@ or from the one without any duplicates, so I did both
 
 
 def lesser_num_index(provided_list):
-    print(provided_list)
     min_value_index = 0
     for index, value in enumerate(provided_list[1:]):
         if value <= provided_list[min_value_index]:
