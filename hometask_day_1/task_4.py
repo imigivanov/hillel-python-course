@@ -34,7 +34,7 @@ print("Here are 3 of the greatest numbers in the list: {}".format(sorted_desc[0:
 """
 4.3) Print out the index of a smallest value in the list.
 
-Not sure here whether I supposed to print index of a smallest number from the source array 
+Not sure here whether I am supposed to print index of a smallest number from the source array 
 or from the one without any duplicates, so I did both
 """
 
