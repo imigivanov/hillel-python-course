@@ -127,9 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-<<<<<<< HEAD
 
 # PyCharm stuff
 .idea
-=======
->>>>>>> fd688412c304ab1260782d5f35095d36fa105724
