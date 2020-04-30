@@ -34,11 +34,14 @@ result = {
 
 def group_by_city(array):
     result = {}
+    mod_element = {}
     for element in array:
         if element['city'] not in result:
             result[element['city']] = []
-        result[element['city']].append(element)
+        mod_element = element.copy()
+        mod_element.pop('city')
+        result[element['city']].append(mod_element)
     return result
 
 
-group_by_city(data)
+print(group_by_city(data))
