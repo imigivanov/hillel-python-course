@@ -1,21 +1,9 @@
 def power_of_num(array, n):
 
-    print(array)
-    print(array[n])
-    print(n)
-
     if len(array) <= n:
         return -1
 
-    if n == 0:
-        return 1
-
-    power = 1
-
-    for i in range(1, n):
-        power *= my_arr[n]
-
-    return power
+    return array[n] ** n
 
 my_arr = [2, 3, 5, 7, 3, 0]
 
